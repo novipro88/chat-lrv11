@@ -26,19 +26,19 @@
   }
 
   .btn-primary {
-    @apply bg-primary text-white transition-all hover:bg-primary-dark focus:bg-primary-dark focus:ring-4 focus:ring-primary/15;
+    @apply transition-all bg-primary text-white hover:bg-primary-dark focus:bg-primary-dark focus:ring-4 focus:ring-primary/15;
   }
 
   .btn-danger {
-    @apply bg-danger text-white transition-all hover:bg-danger-dark focus:bg-danger-dark focus:ring-4 focus:ring-danger/15;
+    @apply transition-all bg-danger text-white hover:bg-danger-dark focus:bg-danger-dark focus:ring-4 focus:ring-danger/15;
   }
 
   .btn-success {
-    @apply bg-success text-white transition-all hover:bg-success-dark focus:bg-success-dark focus:ring-4 focus:ring-success/15;
+    @apply transition-all bg-success text-white hover:bg-success-dark focus:bg-success-dark focus:ring-4 focus:ring-success/15;
   }
 
   .btn-secondary {
-    @apply border border-secondary bg-background text-foreground transition-all hover:bg-secondary focus:bg-secondary focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-background;
+    @apply transition-all bg-background text-foreground hover:bg-secondary focus:bg-secondary focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-background border border-secondary;
   }
 
   .btn-link {
@@ -46,19 +46,19 @@
   }
 
   .form-control {
-    @apply rounded-lg border border-gray-200 bg-background text-foreground outline-none transition-all focus-within:border-primary focus-within:ring-4 focus-within:ring-primary/15 dark:border-gray-500/25 dark:focus-within:border-primary;
+    @apply rounded-lg border border-gray-200 bg-background text-foreground outline-none transition-all dark:border-gray-500/25 focus-within:border-primary focus-within:ring-4 focus-within:ring-primary/15 dark:focus-within:border-primary;
   }
 
   .form-control:disabled,
   .form-control[aria-disabled="true"] {
-    @apply cursor-not-allowed bg-secondary/25 focus-within:border-gray-200 focus-within:ring-0 dark:focus-within:border-gray-500/25;
+    @apply cursor-not-allowed bg-secondary/25 focus-within:ring-0 focus-within:border-gray-200 dark:focus-within:border-gray-500/25;
   }
 
-  :has(.form-control + p.text-danger) > .form-control {
+  :has(.form-control + p.text-danger)>.form-control {
     @apply border-danger focus-within:ring-danger/15;
   }
 
   .checkbox {
-    @apply rounded border border-gray-200 bg-background text-primary !outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/15 focus:ring-offset-2 focus:ring-offset-background dark:border-gray-500/25;
+    @apply rounded border border-gray-200 dark:border-gray-500/25 bg-background text-primary !outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/15 focus:ring-offset-2 focus:ring-offset-background;
   }
 }

@@ -16,8 +16,8 @@ class UserTableSeeder extends Seeder
         User::factory(30)->create();
 
         User::first()->update([
-            'email' => 'echo.yuliantipali97@gmail.com',
-            'name' => 'Project Pro'
+            'email' => 'echo.mkaidev88@gmail.com',
+            'name' => 'Mkaiey'
         ]);
     }
 }
